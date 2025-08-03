@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Basic SEO Meta Tags -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Learn web development basics with semantic HTML5, accessibility best practices, and beginner-friendly SEO tips.">
+    <meta name="keywords" content="HTML5, semantic HTML, accessibility, SEO, beginner web development">
+    <meta name="author" content="Your Name">
+    <title>HTML5 Semantic Web Page Example</title>
+</head>
+<body>
+    <!-- Header with site identity -->
+    <header>
+        <h1>Learn HTML5: Semantic Structure & Accessibility</h1>
+        <!-- Navigation Landmark -->
+        <nav aria-label="Main navigation">
+            <ul>
+                <li><a href="#about" title="About HTML5 Semantics">About</a></li>
+                <li><a href="#benefits" title="Benefits of Semantic HTML">Benefits</a></li>
+                <li><a href="#contact" title="Contact Information">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main content landmark -->
+    <main id="main-content">
+        <!-- About Section -->
+        <section id="about" aria-labelledby="about-heading">
+            <h2 id="about-heading">About Semantic HTML5</h2>
+            <p>
+                Semantic HTML5 elements clearly describe their meaning in both human and machine-readable ways. 
+                Using these elements improves website accessibility and helps search engines understand content better.
+            </p>
+        </section>
+
+        <!-- Benefits Section -->
+        <section id="benefits" aria-labelledby="benefits-heading">
+            <h2 id="benefits-heading">Benefits of Semantic HTML</h2>
+            <article aria-labelledby="seo-benefits">
+                <h3 id="seo-benefits">Improved SEO</h3>
+                <p>
+                    Search engines can better index your content when you use semantic tags, 
+                    which may improve your ranking in search results.
+                </p>
+            </article>
+            <article aria-labelledby="accessibility-benefits">
+                <h3 id="accessibility-benefits">Better Accessibility</h3>
+                <p>
+                    Assistive technologies like screen readers rely on proper HTML structure to 
+                    help users navigate websites more effectively.
+                </p>
+            </article>
+            <article aria-labelledby="maintenance-benefits">
+                <h3 id="maintenance-benefits">Easier Maintenance</h3>
+                <p>
+                    Semantic HTML makes your code more readable and maintainable for developers.
+                </p>
+            </article>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" aria-labelledby="contact-heading">
+            <h2 id="contact-heading">Contact</h2>
+            <address>
+                <p>Email: <a href="mailto:example@example.com">example@example.com</a></p>
+                <p>Phone: <a href="tel:+1234567890">+1 234 567 890</a></p>
+            </address>
+        </section>
+    </main>
+
+    <!-- Footer landmark -->
+    <footer>
+        <p>&copy; 2025 Learn HTML5. All rights reserved.</p>
+    </footer>
+</body>
+</html>
